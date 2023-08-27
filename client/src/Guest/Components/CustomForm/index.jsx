@@ -5,7 +5,7 @@ import Signupform from './Signupform'
 
 export default function CustomForm() {
     return (
-        <div className="wrapper">
+        <div className="wrapper " >
             <div className="card-switch">
                 <label className="switch">
                     <input type="checkbox" className="toggle" />

@@ -1,7 +1,11 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 export default function Slider() {
+ 
   return (
  
    <Carousel>
@@ -13,8 +17,8 @@ export default function Slider() {
           alt="First slide"
         />
         <Carousel.Caption>
-        <h1 style={{marginBottom:"30px", color:"black"}}>Creating a better life for you</h1>
-          <h3 style={{marginBottom:"200px",color:"black"}}>Abrish Furniture</h3>
+        <h1 style={{marginBottom:"30px", color:"black"}} >Creating a better life for you</h1>
+          <h3 style={{marginBottom:"200px",color:"black"}} >Abrish Furniture</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>

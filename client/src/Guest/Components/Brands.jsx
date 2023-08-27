@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import GuestCards from './GuestCards'
 import axios from 'axios'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Brand() {
     const [brands, setbrands] = useState([])
@@ -12,12 +14,20 @@ export default function Brand() {
     }, [])
 
 
+    useEffect(() => {
+        AOS.init({
+          offset: 300,
+          duration: 3000
+        });
+      
+      },[])
 
 
     return (
-        <div className="container my-5">
+        <div className="container my-5" data-aos="fade-up" >
             <div className="text-center">
                 <h2>Brands</h2>
+                <hr className='m-auto w-25 h-35  mb-2' style={{ color : '#01F9C6' }} />
                 <small className="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum delectus magnam doloribus voluptatibus possimus corrupti aliquid itaque harum debitis ipsa!</small>
             </div>
 

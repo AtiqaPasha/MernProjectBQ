@@ -34,6 +34,7 @@ export default function Brands() {
         <div className="container my-5">
             <div className="text-center">
                 <h2>Brands</h2>
+                <hr className='m-auto w-25 h-35  mb-2' style={{ color : '#01F9C6' }} />
                 <small className="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum delectus magnam doloribus voluptatibus possimus corrupti aliquid itaque harum debitis ipsa!</small>
             </div>
 
